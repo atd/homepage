@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Antonio Tapiador del Dujo</title>
     <meta name="author" content="Antonio Tapiador del Dujo">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,489 +15,710 @@
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
-	var u="//stats.singularities.org/";
-	_paq.push(['setTrackerUrl', u+'piwik.php']);
-	_paq.push(['setSiteId', '2']);
-	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      	var u="//stats.singularities.org/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
       })();
     </script>
+
+    <style media="screen">
+      .navbar-brand {
+        /* fix collapse button overlaping */
+        padding-right: 60px;
+      }
+      #researchPublications .list-group-item,
+      #researchReviews .list-group-item {
+        display: block;
+      }
+
+      .research-wrapper {
+        background-color: #f7f7f9;
+      }
+
+      .developer-wrapper {
+        background-image: url("images/dev.jpg");
+
+        /* Set a specific height */
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      #developer {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+
+      @media (min-width: 768px) {
+        .github-card-wrapper {
+          float: right;
+          margin-left: 1rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Antonio Tapiador del Dujo</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#researcher">Researcher</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#developer">Developer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/atapiador" target="_blank">Twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/atd" target="_blank">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
-      <header class="page-header">
-        <div class="media">
-          <div class="media-left">
-            <img class="media-object" src="images/antonio-tapiador.jpg" alt="photo">
-          </div>
-          <div class="media-body">
-            <div class="vcard">
-              <h1 class="media-heading"><span class="fn">Antonio Tapiador del Dujo</span> <small>Ph.D</small></h1>
-              <div>
-                <a href="http://grasia.fdi.ucm.es/">Agent-based, Social &amp; Interdisciplinary Applications Group (GRASIA)</a><br>
-              </div>
-              <div>
-                <a href="http://www.ucm.es/">Universidad Complutense de Madrid (UCM)</a><br>
-              </div>
-            </div>
-            <div class="adr">
-              <div class="street-address">Profesor José García Santesmases, s/n</div>
-              <span class="postal-code">E-28040</span>
-              <span class="locality">Madrid</span>
-              <div class="country-name">Spain</div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <section id="bio" class="row py-3">
+        <div class="col">
 
-      <div class="research-interests row">
-        <div class="col-md-12">
-          <h2>Research Interests</h2>
+          <h1>Bio</h1>
+          <img src="images/antonio-tapiador.jpg" class="img-fluid rounded float-right img-thumbnail ml-3 mb-3" alt="Photo of Antonio">
           <p>
-            I am a researcher and developer from Madrid, Spain. I have been
-            involved in social movements from many years, which gave me the
-            social perspective I find essential to supplement the logical
-            part of our brain.
+            I am a <a href="#researcher">researcher</a> and
+            <a href="#developer">developer</a> from
+            <span class="adr"><span class="locality">Madrid</span>,
+            <span class="country-name">Spain</span></span>.
           </p>
+
           <p>
-            From year 2000, when I installed <a href="https://www.debian.org/">Debian</a>
-            <a href="https://wiki.debian.org/DebianPotato">Potato</a> from scratch,
-            I have been fully interested in <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS (Free/Libre/OpenSource) software</a>,
-            as you can find in the <a href="#software-projects">software projects</a> section.
+            I started to be interested in
+            <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS (Free/Libre/OpenSource) software</a>
+            when I started my degree as
+            <a href="http://www.etsit.upm.es/de/studies/telecommunication-engineer-p94.html">Telecommunication Engineer</a>,
+            along with my involment in social movements and music bands.
           </p>
+
           <p>
-            Ciberactivism made me be aware of some aspects in Computer Science,
-            such as <a href="https://en.wikipedia.org/wiki/Computer_security">security</a> &amp; <a href="https://en.wikipedia.org/wiki/Internet_privacy">privacy</a>,
-            which allowed me to grow as a hacker and develop my technical skills.
+            I became very aware of the transformation the internet
+            was bringing to the culture industries, software first,
+            music next and now it is finally reaching to other aspects of
+            human activities, such as accommodation or transportation.
+            I was an active promoter of free culture licenses, with my
+            fellows in the musicians collective
+            <a href="http://ruidodebarrio.lapiluka.org/">Ruido de Barrio</a>
+            and bringing the internet culture to people through
+            <a href="http://ww2.grn.es/merce/2006/hacklabs.html">hacklabs</a>
+            in social centers.
           </p>
+
           <p>
-            After my graduation as <a href="http://www.etsit.upm.es/de/studies/telecommunication-engineer-p94.html">Telecommunication Engineer</a>,
-            I become more interested in social networks. I was dazzled by
+            My final Telecommunication Engineer project was about
+            <a href="https://en.wikipedia.org/wiki/Multihoming#IPv6_multihoming">IPv6 multihoming</a>.
+            I was very interested in seeing how internet standarization
+            worked, and who controlled it. I participated in some
+            <a href="https://www.ietf.org/">IETF</a> working groups to
+            confirm how their philosophy was quite similar to other social movements.
+            I like very much their quote:
+            <span class="font-italic">We reject: kings, presidents and voting.
+            We believe in: rough consensus and running code.</span>
+          </p>
+
+          <p>
+            After checking how the base of the internet worked,
+            I switched to the application level.
+            I was motivated to delivering real value to users.
+            I was active in the <a href="http://rubyonrails.org/">Rails</a> community,
+            <a href="https://rubygems.org/profiles/atd">publishing several gems</a> and
+            <a href="http://contributors.rubyonrails.org/contributors/antonio-tapiador-del-dujo/commits">contributing to the core</a>.
+            Besides, I was dazzled by
             <a href="https://en.wikipedia.org/wiki/Scale-free_network">scale-free networks</a>,
-            and started to study <a href="https://en.wikipedia.org/wiki/Digital_identity">digital identity</a> and
-            <a href="https://en.wikipedia.org/wiki/Distributed_social_network">distributed social software</a>.
-            All these ingredients where mixed in my <a href="phd-thesis">Ph.D thesis</a>.
+            how they emerged everywhere, from proteins to the internet itself.
+            I could see scale-free networks in multiple social contexts,
+            from social movements to the workplace.
+            In the context of the boom of
+            <a href="https://en.wikipedia.org/wiki/Social_networking_service">social network sites</a>,
+            I developed my <a href="http://oa.upm.es/21801/">Ph.D thesis</a> on a
+            <a href="https://rubygems.org/gems/social_stream">Rails gem</a> to build any kind of social network in the web.
+            I was proud the outcome of this thesis was not only theoretical, but several social sites
+            around the work were build on top of <a href="https://github.com/ging/social_stream">Social Stream</a>.
           </p>
+
           <p>
-            In the last years, I have been devoted to
-            <a href="https://en.wikipedia.org/wiki/Commons-based_peer_production">Common Based Peer Production Communities</a>,
-            which a found a natural next step in my path.
+            However, I was not able to build successful final apps to users. I enroled a course
+            on <a href="http://h2iinstitute.com/en/courses/business-design-lean-startup/">Business Desing and Lean Startup</a>
+            to learn how to deliver real value to users. I practiced
+            these skills in the <a href="http://www.p2pvalue.eu/">P2Pvalue project</a>,
+            where we learnt a lot about
+            <a href="https://en.wikipedia.org/wiki/Commons-based_peer_production">Common Based Peer Production Communities</a>.
+            It was a natural step in my path, I was able to apply concepts from social networks and
+            social movements, and we learnt a lot about how these communities work.
           </p>
+
           <p>
-            I have always been very passionate about other things that gained my attention,
-            like music and martial arts, which have helped me to develop an aesthetic sense
-            that I have always found a guide of fulfillment in my projects.
+            Now I am fed up with academy and its publication dictate,
+            I want to explore other scenarios where
+            delivering more value to users and doing practical stuff.
           </p>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <div class="research-projects row">
-        <div class="col-md-12">
-          <h2>Research Projects</h2>
-          <p>
-            During these years, I have gained a lot of experience participating in the following European research projects
-          </p>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://p2pvalue.eu/">
-                  <img src="images/projects/p2pvalue.png">
-                </a>
-                <div class="caption">
-                  <h3>P2Pvalue</h3>
-                  <p>
-                    Techno-social platform for sustainable models and value generation in commons-based peer production in the Future Internet
-                  </p>
-                  <p>
-                    FP7-ICT-2013-10
-                  </p>
-                  <p>
-                    <a href="http://p2pvalue.eu/">http://p2pvalue.eu/</a>
-                  </p>
+    <div class="research-wrapper">
+      <div class="container">
+        <section id="researcher" class="row py-3">
+          <div class="col">
+
+            <h1>Researcher</h1>
+
+            <p>
+              I started to participate in European research projects before finishing my graduation as
+              <a href="http://www.etsit.upm.es/de/studies/telecommunication-engineer-p94.html">Telecommunication Engineer</a>.
+              working in the <a href="http://www.euro6ix.org/">Euro6IX</a> in the problem of
+              <a href="https://en.wikipedia.org/wiki/Multihoming#IPv6_multihoming">IPv6 multihoming</a>.
+            </p>
+
+            <p>
+              After the graduation, I started worked in the
+              <a href="http://www.icamp.eu/">iCamp</a> project, with started to track decentralization issues.
+              My interests also included
+              <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FLOSS (Free/Libre/OpenSource) software</a> and
+              <a href="https://en.wikipedia.org/wiki/Computer_security">security</a> &amp; <a href="https://en.wikipedia.org/wiki/Internet_privacy">privacy</a>,
+            </p>
+
+            <div class="text-center">
+
+              <img src="images/thesis-prelecture.jpg" class="img-fluid rounded img-thumbnail my-3" alt="Antonio's presentation">
+            </div>
+
+            <p>
+              My enthusiasm for the Web 2.0 was upgraded with the advenement of
+              <a href="https://en.wikipedia.org/wiki/Social_networking_service">social network sites</a>,
+              which made me learn about
+              <a href="https://en.wikipedia.org/wiki/Scale-free_network">scale-free networks</a>.
+              I started to study <a href="https://en.wikipedia.org/wiki/Digital_identity">digital identity</a> and
+              <a href="https://en.wikipedia.org/wiki/Distributed_social_network">distributed social software</a>.
+              After a 3 month stay in Leuven, collaborating with the
+              <a href="https://distrinet.cs.kuleuven.be/research/projects/SPION">SPION</a> project,
+              I finished my <a href="http://oa.upm.es/21801/">Ph.D thesis</a>,
+              which mixed all these ingredients in
+              a framework for building distributed social network websites,
+              with <a href="https://github.com/ging/social_stream">Social Stream</a>
+              a product used by several sites around the world.
+            </p>
+
+            <p>
+              Finaly, I joined the <a href="http://www.ucm.es/">Complutense University of Madrid</a> to work on
+              the <a href="http://p2pvalue.eu/">P2Pvalue project</a>,
+              where I applied my knowledge of free-scale networks and lot of experiences I learned from social movements.
+
+            </p>
+
+          <div id="researchAccordion" role="tablist" aria-multiselectable="true">
+            <div class="card">
+              <div class="card-header" role="tab" id="researchHeadingOne">
+                <h5 class="mb-0">
+                  <a data-toggle="collapse" data-parent="#researchAccordion" href="#researchProjects" aria-expanded="false" aria-controls="researchProjects">
+                    Research projects I have participated in
+                  </a>
+                </h5>
+              </div>
+
+              <div id="researchProjects" class="collapse" role="tabpanel" aria-labelledby="researchHeadingOne">
+                <div class="card-block">
+
+                  <div class="card-columns">
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://p2pvalue.eu/">
+                          <img class="img-fluid" src="images/projects/p2pvalue.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          P2Pvalue
+                        </h4>
+                        <p class="card-text">
+                          Techno-social platform for sustainable models and value generation in commons-based peer production in the Future Internet
+                        </p>
+                        <small class="card-text">
+                          FP7-ICT-2013-10
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://p2pvalue.eu/">http://p2pvalue.eu/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://www.fi-ware.eu/">
+                          <img class="img-fluid" src="images/projects/fiware.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          FI-WARE
+                        </h4>
+                        <p class="card-text">
+                          Future Internet Core Platform, included in the <a href="http://www.fi-ppp.eu/">Future Internet Public-Private Partnership (FI-PPP)</a>
+                        </p>
+                        <small class="card-text">
+                          FP7-2011-ICT-FI
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://www.fi-ware.eu/">http://www.fi-ware.eu/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://mediafi.org/">
+                          <img class="img-fluid" src="images/projects/ficontent.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          FI-CONTENT
+                        </h4>
+                        <p class="card-text">
+                          FI-CONTENT, included in the <a href="http://www.fi-ppp.eu/">Future Internet Public-Private Partnership (FI-PPP)</a>
+                        </p>
+                        <small class="card-text">
+                          FP7-2011-ICT-FI-284534
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://mediafi.org/">http://mediafi.org/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://www.globalexcursion-project.eu/">
+                          <img class="img-fluid" src="images/projects/globalexcursion.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          Global Excursion
+                        </h4>
+                        <p class="card-text">
+                          Extended Curriculum for Science Infrastructure Online
+                        </p>
+                        <small class="card-text">
+                          FP7-INFRA-2011-3.4
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://www.globalexcursion-project.eu/">http://www.globalexcursion-project.eu/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://www.spion.me/">
+                          <img class="img-fluid" src="images/projects/spion.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          SPION
+                        </h4>
+                        <p class="card-text">
+                          Privacy and Security in Online Social Networks. During research visit at <a href="http://www.kuleuven.be/">KU Leuven</a>
+                        </p>
+                        <small class="card-text">
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://www.spion.me/">http://www.spion.me/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://global-project.eu/">
+                          <img class="img-fluid" src="images/projects/global.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          Global
+                        </h4>
+                        <p class="card-text">
+                          Global Linkage Over BroadbAnd Links
+                        </p>
+                        <small class="card-text">
+                          FP7-INFRA-2007-3.0-03
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://global-project.eu/">http://global-project.eu/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://www.icamp.eu/">
+                          <img class="img-fluid" src="images/projects/icamp.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          iCamp
+                        </h4>
+                        <p class="card-text">
+                          Innovative, inclusive, interactive, intercultural learning Campus
+                        </p>
+                        <small class="card-text">
+                          FP6-IST-027168
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://www.icamp.eu/">http://www.icamp.eu/</a>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="text-center">
+                        <a href="http://www.euro6ix.org/">
+                          <img class="img-fluid" src="images/projects/euro6ix.png">
+                        </a>
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          Euro6IX
+                        </h4>
+                        <p class="card-text">
+                          European IPv6 Internet Exchanges Backbone
+                        </p>
+                        <small class="card-text">
+                         IST-2001-32161
+                        </small>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <a href="http://www.euro6ix.org/">http://www.euro6ix.org/</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://www.fi-ware.eu/">
-                  <img src="images/projects/fiware.png">
-                </a>
-                <div class="caption">
-                  <h3>FI-WARE</h3>
-                  <p>
-                    Future Internet Core Platform, included in the <a href="http://www.fi-ppp.eu/">Future Internet Public-Private Partnership (FI-PPP)</a>
-                  </p>
-                  <p>
-                    FP7-2011-ICT-FI
-                  </p>
-                  <p>
-                    <a href="http://www.fi-ware.eu/">http://www.fi-ware.eu/</a>
-                  </p>
+            <div class="card">
+              <div class="card-header" role="tab" id="researchHeadingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#researchAccordion" href="#researchPublications" aria-expanded="false" aria-controls="researchPublications">
+                    Research Publications
+                  </a>
+                </h5>
+              </div>
+              <div id="researchPublications" class="collapse" role="tabpanel" aria-labelledby="researchHeadingTwo">
+                <div class="card-block">
+
+                  <ul class="list-group">
+                    <li id="phd-thesis" class="list-group-item">
+                      Antonio Tapiador.
+                      <a href="http://oa.upm.es/21801/">
+                        <strong>A framework for building distributed social network websites</strong>
+                      </a>.
+                      Ph.D Thesis. 2013.
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Diego Carrera, Joaquín Salvachúa.
+                      <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6476557">
+                        <strong>Social Stream, a social network framework</strong>
+                      </a>.
+                      Proceedings of International Conference on Future Generation Communication Technology (FGCT 2012). London, England.
+                      pp. 52-57. ISBN: 978-1-4673-5859-0.
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Diego Carrera.
+                      <strong>A survey on social network site's functional features</strong>.
+                      Proceedings of IADIS WWW/Internet 2012. Madrid, Spain.
+                      pp. 133-140. ISBN: 978-989-8533-09-8
+                      <a href="http://arxiv.org/abs/1209.3650">Preprint</a>
+                    </li>
+                    <li class="list-group-item">
+                      Alicia Díez, Antonio Tapiador.
+                      <strong>Social Cheesecake: An UX-driven designed interface for managing contacts</strong>.
+                      Proceedings of IADIS WWW/Internet 2012. Madrid, Spain.
+                      pp. 526-528. ISBN: 978-989-8533-09-8
+                      <a href="http://arxiv.org/abs/1209.0578">Preprint</a>
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Víctor Sánchez, Joaquín Salvachúa.
+                      <strong>An analysis of social network connect services</strong>.
+                      Proceedings of WEBIST 2012. Porto, Portugal. pp. 255-258. ISBN: 978-989-8565-08-2.
+                      <a href="http://arxiv.org/abs/1207.5545">Preprint</a>
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Antonio Mendo.
+                      <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6088205&tag=1">
+                        <strong>A survey on OpenID identifiers</strong>
+                      </a>.
+                      7th International Conference on Next Generation Web Services Practices 2011. Salamanca. Spain.
+                      pp. 357-362. ISBN: 978-1-4577-1126-8
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Joaquín Salvachúa.
+                      <a href="docs/Content_management_in_Ruby_on_Rails.pdf">
+                        <strong>Content Management in Ruby on Rails</strong>
+                      </a>.
+                      Proceedings of the IADIS International Conference on Collaborative Technologies 2011. Rome. Italy.
+                      ISBN: 978-989-8533-00-5
+                    </li>
+                    <li class="list-group-item">
+                      Víctor Sánchez, Antonio Tapiador.
+                      <a href="http://d-cent.org/fsw2011/wp-content/uploads/fsw2011-Social-network-federation-with-Social-Stream-and-Social2social.pdf">
+                        <strong>Social network federation with Social Stream and Social2social</strong>
+                      </a>.
+                      Federated Social Web Europe 2011, Berlin, Germany.
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Diego Carrera, Joaquín Salvachúa.
+                      <a href="http://arxiv.org/abs/1205.5720">
+                        <strong>Tie-RBAC: an application of RBAC to Social Networks</strong>
+                      </a>.
+                      Web 2.0 Security and Privacy 2011. Oakland, USA.
+                      <a href="docs/tie-rbac-slides.pdf">Slides</a>
+                    </li>
+                    <li class="list-group-item">
+                      Enrique Barra, Antonio Mendo, Antonio Tapiador, David Prieto.
+                      <a href="docs/Integral_solution_for_Web_conferencing_event_management-short_paper.pdf">
+                        <strong>Integral solution for web conferencing event management</strong>
+                      </a>.
+                      Proceedings of the IADIS International Conference e-Society 2011. Ávila, Spain.
+                      pp. 443-446. ISBN: 978-972-8939-46-5
+                      <a href="docs/web_videoconferences-slides.pdf">Slides</a>
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Antonio Fumero, Joaquín Salvachúa,
+                      <a href="http://www.springerlink.com/content/m1521727838k32n6/">
+                        <strong>Extended Identity for Social Networks</strong>
+                      </a>,
+                      Lecture Notes in Computer Science, 2011, Volume 6045/2011,
+                      pp. 162-168. DOI: 10.1007/978-3-642-16581-8_17
+                    </li>
+                    <li class="list-group-item">
+                      Enrique Barra, Antonio Mendo, David Prieto, Antonio Tapiador, Juan Quemada,
+                      <a href="docs/resource_relationship_in_collaborative_web_applications-revision-final.pdf">
+                        <strong>Resource Relationships in the design of collaborative Web applications</strong>
+                      </a>,
+                      Proceedings of IADIS Multi Conference on Computer Science and Information Systems, Freiburg, Germany, July 2010.
+                      ISBN: 978-972-8939-21-2
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Antonio Fumero, Joaquín Salvachúa, Javier Cerviño.
+                      <a href="docs/jitel-cr.pdf">
+                        <strong>Identidad Extendida en Redes Sociales</strong>
+                      </a>.
+                      VII Jornadas de Ingeniería Telemática JITEL 2008, Proceedings, Alcala de Henares - España. Septiembre 2008
+                    </li>
+                    <li class="list-group-item">
+                      Fridolin Wild, Steinn E. Sigurðarson, Stefan Sobernig, Christina Stahl, Ahmet Soylu, Vahur Rebas, Dariusz Górka, Anna Danielewska-Tulecka, Antonio Tapiador.
+                      <a href="docs/distributed-feed-networks.pdf">
+                        <strong>An Interoperability Infrastructure for Distributed Feed Networks</strong>
+                      </a>
+                      Proceedings of the 1st International Workshop on Collaborative Open Environments for Project-Centered Learning, COOPER-2007, Sissi, Lassithi - Crete Greece, 17 September, 2007.
+                      ISBN: 1613-0073
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Antonio Fumero Joaquín Salvachúa, Sandra Aguirre.
+                      <a href="docs/collaboratecom-cr.pdf">
+                        <strong>A Web Collaboration Architecture</strong>
+                      </a>.
+                      Proceedings of the 2nd IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing. Atlanta, Georgia, USA. November, 2006.
+                      ISBN: 1-4244-0429-0
+                    </li>
+                    <li class="list-group-item">
+                      Sandra Aguirre, Joaquín Salvachúa, Juan Quemada, Antonio Fumero, Antonio Tapiador.
+                      <strong>Joint Degrees in E-Learning Systems: A Web Services Approach</strong>.
+                      Proceedings of the 2nd IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing. Atlanta, Georgia, USA. November, 2006.
+                      ISBN: 1-4244-0429-0
+                    </li>
+                    <li class="list-group-item">
+                      Sandra Aguirre, Joaquín Salvachúa, Juan Quemada, Antonio Fumero, Antonio Tapiador.
+                      <strong>Desarrollo de Titulaciones Conjuntas en los Sistemas de E-Learning</strong>.
+                      Proceedings of the 8th International Symposium on Computers in Education. León, Spain. October, 2006.
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Fumero, Sandra Aguirre, Antonio	Tapiador, Joaquín Salvachúa.
+                      <strong>Next-Generation Educational	Web</strong>.
+                      Proceedings of the 12th International Conference on	Concurrent Enterprising ICE2006 - Poster. Milan, Italy. June, 2006.
+                    </li>
+                    <li class="list-group-item">
+                      Joaquín Salvachúa, Sandra Aguirre, Antonio Fumero, Antonio Tapiador, Alberto Mozo, Juan	Quemada
+                      <strong>¿Como puede ser el E-learning 2.0?</strong>.
+                      I Jornadas de Innovación Educativa. Zamora, España. June, 2006
+                    </li>
+                    <li class="list-group-item">
+                      Carlos Barcenilla, Antonio Tapiador, David Fernández, Omar Walid, Tomás de Miguel.
+                      <a href="http://link.springer.com/chapter/10.1007/0-387-31170-X_5">
+                        <strong>Implementation of an IPv6 Multihoming Ingress Filtering Compatibility Mechanism Using Automatic Tunnels</strong>
+                      </a>
+                      EUNICE 2005: Networks and Applications Towards a Ubiquitously Connected World. IFIP International Workshop on Networked Applications, Colmenarejo, Madrid/Spain, 6–8 July, 2005.
+                      pp. 59-73. ISBN: 978-0-387-30815-9
+                    </li>
+                    <li class="list-group-item">
+                      Antonio Tapiador, Tomás de Miguel, María J. Perea, Omar Walid, Marco Hernández, David Fernández.
+                      <a href="docs/eunice2004_mh.pdf">
+                        <strong>A simple host centric solution for a network research multihoming environment</strong>
+                      </a>.
+                      Eunice 2004. Proceedings of 10<sup>th</sup> Open European Summer School and IFIP WG 6.3 Workshop, June 14-16, 2004. Tampere, Finland.
+                      pp. 49-52. ISBN: 952-15-1187-7
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://mediafi.org/">
-                  <img src="images/projects/ficontent.png">
-                </a>
-                <div class="caption">
-                  <h3>FI-CONTENT</h3>
-                  <p>
-                    FI-CONTENT, included in the <a href="http://www.fi-ppp.eu/">Future Internet Public-Private Partnership (FI-PPP)</a>
-                  </p>
-                  <p>
-                    FP7-2011-ICT-FI-284534
-                  </p>
-                  <p>
-                    <a href="http://mediafi.org/">http://mediafi.org/</a>
-                  </p>
+            <div class="card">
+              <div class="card-header" role="tab" id="researchHeadingThree">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#researchAccordion" href="#researchReviews" aria-expanded="false" aria-controls="researchReviews">
+                    Paper reviews
+                  </a>
+                </h5>
+              </div>
+              <div id="researchReviews" class="collapse" role="tabpanel" aria-labelledby="researchHeadingThree">
+                <div class="card-block">
+
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      Invited reviewer.
+                      <a href="http://www.palgrave-journals.com/ejis/">European Journal of Information Systems</a>
+                      2011
+                    </li>
+                    <li class="list-group-item">Invited reviewer.
+                      <a href="http://www.revistadyna.com/">Dyna Ingenieria E Industria</a>
+                      2016
+                    </li>
+                  </ul>
+
+                  You can check my reviews at <a href="https://publons.com/author/789872/antonio-tapiador-del-dujo">my publons profile</a>.
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://www.globalexcursion-project.eu/">
-                  <img src="images/projects/globalexcursion.png">
-                </a>
-                <div class="caption">
-                  <h3>Global Excursion</h3>
-                  <p>
-                    Extended Curriculum for Science Infrastructure Online
-                  </p>
-                  <p>
-                    FP7-INFRA-2011-3.4
-                  </p>
-                  <p>
-                    <a href="http://www.globalexcursion-project.eu/">http://www.globalexcursion-project.eu/</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://www.spion.me/">
-                  <img src="images/projects/spion.png">
-                </a>
-                <div class="caption">
-                  <h3>SPION</h3>
-                  <p>
-                    Privacy and Security in Online Social Networks. During research visit at <a href="http://www.kuleuven.be/">KU Leuven</a>
-                  </p>
-                  <p>
-                    <a href="http://www.spion.me/">http://www.spion.me/</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://global-project.eu/">
-                  <img src="images/projects/global.png">
-                </a>
-                <div class="caption">
-                  <h3>Global</h3>
-                  <p>
-                    Global Linkage Over BroadbAnd Links
-                  </p>
-                  <p>
-                    FP7-INFRA-2007-3.0-03
-                  </p>
-                  <p>
-                    <a href="http://global-project.eu/">http://global-project.eu/</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://www.icamp.eu/">
-                  <img src="images/projects/icamp.png">
-                </a>
-                <div class="caption">
-                  <h3>iCamp</h3>
-                  <p>
-                    Innovative, inclusive, interactive, intercultural learning Campus
-                  </p>
-                  <p>
-                    FP6-IST-027168
-                  </p>
-                  <p>
-                    <a href="http://www.icamp.eu/">http://www.icamp.eu/</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="thumbnail">
-                <a href="http://www.euro6ix.org/">
-                  <img src="images/projects/euro6ix.png">
-                </a>
-                <div class="caption">
-                  <h3>Euro6IX</h3>
-                  <p>
-                    European IPv6 Internet Exchanges Backbone
-                  </p>
-                  <p>
-                     IST-2001-32161
-                  </p>
-                  <p>
-                    <a href="http://www.euro6ix.org/">http://www.euro6ix.org/</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="software-projects" class="software-projects row">
-        <div class="col-md-12">
-          <h2>Software Projects</h2>
-          <p>
-            I have been a very practical researcher with a strong focus in development.
-          </p>
-          <p>
-            I started making <a href="http://www2.linux-ipv6.org/ml/usagi-users/msg02507.html">
-            contributions in IPv6 stack of the Linux kernel</a>.
-          </p>
-          <p>
-            In my next steps, I changed my interests from the network to the application level,
-            developing my skills in <a href="https://en.wikipedia.org/wiki/Web_development">web development</a>
-            and <a href="https://en.wikipedia.org/wiki/Sysop">Sysop</a>.
-          </p>
-
-          <p>
-          I have been quite active in the <a href="http://rubyonrails.org/">Rails</a> community,
-          <a href="http://contributors.rubyonrails.org/contributors/antonio-tapiador-del-dujo/commits">contributing to Rails</a>
-          and <a href="https://rubygems.org/profiles/atd">publishing up to 27 Ruby gems</a>.
-          </p>
-
-          <p>
-            These are some of my work projects:
-          </p>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="grasia" data-repo="teem" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="ging" data-repo="social_stream" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="atd" data-repo="station" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="ging" data-repo="vish" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="ging" data-repo="vcc" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-          </div>
-          <p>
-            These are my last personal projects I have been working on:
-          </p>
-
-          <div class="row">
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="singularities" data-repo="circular-works" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="github-card" data-user="singularities" data-repo="songs-pot" data-width="360" data-height="" data-theme="default"></div>
-            </div>
-          </div>
-
-          <p>
-          You can always check <a href="http://github.com/atd">my github account</a> to find my last development activity:
-          </p>
-
-          <div class="github-account row">
-            <div class="col-xs-12 text-center">
-              <div class="github-card" data-user="atd" data-width="360" data-height="" data-theme="medium"></div>
-            </div>
-          </div>
-          <script src="/github-cards/widget.js"></script>
-        </div>
-      </div>
-
-      <div class="publications row">
-        <div class="col-md-12">
-        <h2>Publications</h2>
-        <p>
-          My academic papers:
-        </p>
-        <ul class="list-group">
-          <li id="phd-thesis" class="list-group-item">
-            Antonio Tapiador.
-            <a href="http://oa.upm.es/21801/">
-              <strong>A framework for building distributed social network websites</strong>
-            </a>.
-            Ph.D Thesis. 2013.
-          </li>
-
-          <li class="list-group-item">
-            Antonio Tapiador, Diego Carrera, Joaquín Salvachúa.
-            <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6476557">
-              <strong>Social Stream, a social network framework</strong>
-            </a>.
-            Proceedings of International Conference on Future Generation Communication Technology (FGCT 2012). London, England.
-            pp. 52-57. ISBN: 978-1-4673-5859-0.
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Diego Carrera.
-            <strong>A survey on social network site's functional features</strong>.
-            Proceedings of IADIS WWW/Internet 2012. Madrid, Spain.
-            pp. 133-140. ISBN: 978-989-8533-09-8
-            <a href="http://arxiv.org/abs/1209.3650">Preprint</a>
-          </li>
-          <li class="list-group-item">
-            Alicia Díez, Antonio Tapiador.
-            <strong>Social Cheesecake: An UX-driven designed interface for managing contacts</strong>.
-            Proceedings of IADIS WWW/Internet 2012. Madrid, Spain.
-            pp. 526-528. ISBN: 978-989-8533-09-8
-            <a href="http://arxiv.org/abs/1209.0578">Preprint</a>
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Víctor Sánchez, Joaquín Salvachúa.
-            <strong>An analysis of social network connect services</strong>.
-            Proceedings of WEBIST 2012. Porto, Portugal. pp. 255-258. ISBN: 978-989-8565-08-2.
-            <a href="http://arxiv.org/abs/1207.5545">Preprint</a>
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Antonio Mendo.
-            <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6088205&tag=1">
-              <strong>A survey on OpenID identifiers</strong>
-            </a>.
-            7th International Conference on Next Generation Web Services Practices 2011. Salamanca. Spain.
-            pp. 357-362. ISBN: 978-1-4577-1126-8
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Joaquín Salvachúa.
-            <a href="docs/Content_management_in_Ruby_on_Rails.pdf">
-              <strong>Content Management in Ruby on Rails</strong>
-            </a>.
-            Proceedings of the IADIS International Conference on Collaborative Technologies 2011. Rome. Italy.
-            ISBN: 978-989-8533-00-5
-          </li>
-          <li class="list-group-item">
-            Víctor Sánchez, Antonio Tapiador.
-            <a href="http://d-cent.org/fsw2011/wp-content/uploads/fsw2011-Social-network-federation-with-Social-Stream-and-Social2social.pdf">
-              <strong>Social network federation with Social Stream and Social2social</strong>
-            </a>.
-            Federated Social Web Europe 2011, Berlin, Germany.
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Diego Carrera, Joaquín Salvachúa.
-            <a href="http://arxiv.org/abs/1205.5720">
-              <strong>Tie-RBAC: an application of RBAC to Social Networks</strong>
-            </a>.
-            Web 2.0 Security and Privacy 2011. Oakland, USA.
-            <a href="docs/tie-rbac-slides.pdf">Slides</a>
-          </li>
-          <li class="list-group-item">
-            Enrique Barra, Antonio Mendo, Antonio Tapiador, David Prieto.
-            <a href="docs/Integral_solution_for_Web_conferencing_event_management-short_paper.pdf">
-              <strong>Integral solution for web conferencing event management</strong>
-            </a>.
-            Proceedings of the IADIS International Conference e-Society 2011. Ávila, Spain.
-            pp. 443-446. ISBN: 978-972-8939-46-5
-            <a href="docs/web_videoconferences-slides.pdf">Slides</a>
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Antonio Fumero, Joaquín Salvachúa,
-            <a href="http://www.springerlink.com/content/m1521727838k32n6/">
-              <strong>Extended Identity for Social Networks</strong>
-            </a>,
-            Lecture Notes in Computer Science, 2011, Volume 6045/2011,
-            pp. 162-168. DOI: 10.1007/978-3-642-16581-8_17
-          </li>
-          <li class="list-group-item">
-            Enrique Barra, Antonio Mendo, David Prieto, Antonio Tapiador, Juan Quemada,
-            <a href="docs/resource_relationship_in_collaborative_web_applications-revision-final.pdf">
-              <strong>Resource Relationships in the design of collaborative Web applications</strong>
-            </a>,
-            Proceedings of IADIS Multi Conference on Computer Science and Information Systems, Freiburg, Germany, July 2010.
-            ISBN: 978-972-8939-21-2
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Antonio Fumero, Joaquín Salvachúa, Javier Cerviño.
-            <a href="docs/jitel-cr.pdf">
-              <strong>Identidad Extendida en Redes Sociales</strong>
-            </a>.
-            VII Jornadas de Ingeniería Telemática JITEL 2008, Proceedings, Alcala de Henares - España. Septiembre 2008
-          </li>
-          <li class="list-group-item">
-            Fridolin Wild, Steinn E. Sigurðarson, Stefan Sobernig, Christina Stahl, Ahmet Soylu, Vahur Rebas, Dariusz Górka, Anna Danielewska-Tulecka, Antonio Tapiador.
-            <a href="docs/distributed-feed-networks.pdf">
-              <strong>An Interoperability Infrastructure for Distributed Feed Networks</strong>
-            </a>
-            Proceedings of the 1st International Workshop on Collaborative Open Environments for Project-Centered Learning, COOPER-2007, Sissi, Lassithi - Crete Greece, 17 September, 2007.
-            ISBN: 1613-0073
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Antonio Fumero Joaquín Salvachúa, Sandra Aguirre.
-            <a href="docs/collaboratecom-cr.pdf">
-              <strong>A Web Collaboration Architecture</strong>
-            </a>.
-            Proceedings of the 2nd IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing. Atlanta, Georgia, USA. November, 2006.
-            ISBN: 1-4244-0429-0
-          </li>
-          <li class="list-group-item">
-            Sandra Aguirre, Joaquín Salvachúa, Juan Quemada, Antonio Fumero, Antonio Tapiador.
-            <strong>Joint Degrees in E-Learning Systems: A Web Services Approach</strong>.
-            Proceedings of the 2nd IEEE International Conference on Collaborative Computing: Networking, Applications and Worksharing. Atlanta, Georgia, USA. November, 2006.
-            ISBN: 1-4244-0429-0
-          </li>
-          <li class="list-group-item">
-            Sandra Aguirre, Joaquín Salvachúa, Juan Quemada, Antonio Fumero, Antonio Tapiador.
-            <strong>Desarrollo de Titulaciones Conjuntas en los Sistemas de E-Learning></strong>.
-            Proceedings of the 8th International Symposium on Computers in Education. León, Spain. October, 2006.
-          </li>
-          <li class="list-group-item">
-            Antonio Fumero, Sandra Aguirre, Antonio	Tapiador, Joaquín Salvachúa.
-            <strong>Next-Generation Educational	Web</strong>.
-            Proceedings of the 12th International Conference on	Concurrent Enterprising ICE2006 - Poster. Milan, Italy. June, 2006.
-          </li>
-          <li class="list-group-item">
-            Joaquín Salvachúa, Sandra Aguirre, Antonio Fumero, Antonio Tapiador, Alberto Mozo, Juan	Quemada
-            <strong>¿Como puede ser el E-learning 2.0?</strong>.
-            I Jornadas de Innovación Educativa. Zamora, España. June, 2006
-          </li>
-          <li class="list-group-item">
-            Carlos Barcenilla, Antonio Tapiador, David Fernández, Omar Walid, Tomás de Miguel.
-            <a href="http://link.springer.com/chapter/10.1007/0-387-31170-X_5">
-              <strong>Implementation of an IPv6 Multihoming Ingress Filtering Compatibility Mechanism Using Automatic Tunnels</strong>
-            </a>
-            EUNICE 2005: Networks and Applications Towards a Ubiquitously Connected World. IFIP International Workshop on Networked Applications, Colmenarejo, Madrid/Spain, 6–8 July, 2005.
-            pp. 59-73. ISBN: 978-0-387-30815-9
-          </li>
-          <li class="list-group-item">
-            Antonio Tapiador, Tomás de Miguel, María J. Perea, Omar Walid, Marco Hernández, David Fernández.
-            <a href="docs/eunice2004_mh.pdf">
-              <strong>A simple host centric solution for a network research multihoming environment</strong>
-            </a>.
-            Eunice 2004. Proceedings of 10<sup>th</sup> Open European Summer School and IFIP WG 6.3 Workshop, June 14-16, 2004. Tampere, Finland.
-            pp. 49-52. ISBN: 952-15-1187-7
-          </li>
-        </ul>
-      </div>
-      </div>
-
-      <div class="other row">
-        <div class="col-md-12">
-        <h2>Other</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Invited reviewer. <a href="http://www.palgrave-journals.com/ejis/">European Journal of Information Systems</a> 2011</li>
-        </ul>
+        </section>
       </div>
     </div>
+
+    <div class="developer-wrapper">
+      <div class="container">
+        <section id="developer" class="row py-3">
+          <div class="col">
+            <h1>Developer</h1>
+
+            <p>
+              Despite a carrer focused on academia,
+              I have been a very practical researcher with a strong focus
+              in system administration and development.
+            </p>
+
+            <p>
+              From year 2000, when I installed <a href="https://www.debian.org/">Debian</a>
+              <a href="https://wiki.debian.org/DebianPotato">Potato</a> from scratch,
+              I have been using <a href="https://www.debian.org/">Debian</a>
+              as my working OS.
+            </p>
+
+            <p>
+              I started my contributions to FLOSS submitting
+              <a href="http://www2.linux-ipv6.org/ml/usagi-users/msg02507.html">
+              patches to a IPv6 stack of the Linux kernel</a>.
+              They were part of my final project as
+              <a href="http://www.etsit.upm.es/de/studies/telecommunication-engineer-p94.html">Telecommunication Engineer</a>.
+            </p>
+
+            <p>
+              Afterwards, I changed my interests from the network to the application level,
+              developing my skills in <a href="https://en.wikipedia.org/wiki/Web_development">web development</a>
+              and <a href="https://en.wikipedia.org/wiki/Sysop">Sysop</a>.
+            </p>
+
+            <p>
+              <div class="github-card-wrapper">
+                <div class="github-card" data-user="ging" data-repo="social_stream" data-theme="default"></div>
+              </div>
+
+              I have been quite active in the <a href="http://rubyonrails.org/">Rails</a> community,
+              <a href="http://contributors.rubyonrails.org/contributors/antonio-tapiador-del-dujo/commits">contributing to Rails</a>
+              and <a href="https://rubygems.org/profiles/atd">publishing up to 27 Ruby gems</a>.
+
+              My main contribution was <a href="https://github.com/ging/social_stream">Social Stream</a>,
+              a framework for building distributed social network websites that was
+              developed as part of <a href="http://oa.upm.es/21801/">my Ph.D</a>
+              and was used by several websites around the world.
+
+              <div class="clearfix"></div>
+            </p>
+
+            <p>
+              <div class="github-card-wrapper">
+                <div class="github-card" data-user="grasia" data-repo="teem" data-theme="default"></div>
+              </div>
+
+              After that, I worked in the <a href="http://p2pvalue.eu">P2Pvalue</a> project
+              setting the infraestructure of virtual machines and continous delivery,
+              and front-developing <a href="https://github.com/grasia/teem">Teem</a>,
+              a tool for collaboration
+              in communities, build on top of <a href="https://angularjs.org/">AngularJS</a>
+              and <a href="http://swellrt.org/">SwellRT</a>.
+
+              <div class="clearfix"></div>
+            </p>
+
+            <p>
+              My side projects include
+              <a href="https://github.com/singularities/circular-work">Circular Work</a>,
+              a tool for distributing community recursive tasks,
+              made on top of <a href="http://rubyonrails.org/">Rails</a> and
+              <a href="https://www.emberjs.com/">Ember.js</a>, and
+              <a href="https://github.com/singularities/song-pot">Song Pot</a>,
+              an app for the creative process of music bands,
+              made with <a href="https://www.meteor.com/">Meteor</a> and
+              <a href="https://angular.io/">Angular (2)</a>
+            </p>
+
+            <p>
+              <div class="github-card-wrapper">
+                <div class="github-card" data-user="atd" data-theme="medium"></div>
+              </div>
+
+              You can always check <a href="http://github.com/atd">my github account</a> to find my last development activity.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer>
+      </footer>
+
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/github-cards/widget.js"></script>
   </body>
 </html>
